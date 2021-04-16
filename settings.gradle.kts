@@ -8,6 +8,8 @@ pluginManagement {
 
 rootProject.name = "KmmSample"
 
+includeBuild("compositeBuild")
+
 include(":androidApp")
 include(":shared")
 

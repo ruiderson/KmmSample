@@ -1,0 +1,4 @@
+package kmpBuild
+
+object Versions {
+}
