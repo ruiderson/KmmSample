@@ -1,14 +1,12 @@
 pluginManagement {
     repositories {
         google()
-        jcenter()
         gradlePluginPortal()
         mavenCentral()
     }
-    
 }
-rootProject.name = "KmmSample"
 
+rootProject.name = "KmmSample"
 
 include(":androidApp")
 include(":shared")
