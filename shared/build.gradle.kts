@@ -1,8 +1,7 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
-    kotlin("multiplatform")
-    id("com.android.library")
+    id("kmp-config")
 }
 
 kotlin {
@@ -24,13 +23,13 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                implementation("com.google.android.material:material:1.2.1")
+                implementation(androidBuild.Dependencies.material)
             }
         }
         val androidTest by getting {
             dependencies {
                 implementation(kotlin("test-junit"))
-                implementation("junit:junit:4.13")
+                implementation(androidBuild.Dependencies.junit)
             }
         }
         val iosMain by getting
@@ -39,11 +38,11 @@ kotlin {
 }
 
 android {
-    compileSdkVersion(29)
+    compileSdkVersion(androidBuild.Config.compileSdkVersion)
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
-        minSdkVersion(24)
-        targetSdkVersion(29)
+        minSdkVersion(androidBuild.Config.minSdkVersion)
+        targetSdkVersion(androidBuild.Config.targetSdkVersion)
     }
 }
 

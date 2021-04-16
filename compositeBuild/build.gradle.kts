@@ -19,5 +19,10 @@ gradlePlugin {
             id = "android-config"
             implementationClass = "androidBuild.plugins.AndroidConfigPlugin"
         }
+
+        create("kmp-config") {
+            id = "kmp-config"
+            implementationClass = "kmpBuild.plugins.KmpConfigPlugin"
+        }
     }
 }
