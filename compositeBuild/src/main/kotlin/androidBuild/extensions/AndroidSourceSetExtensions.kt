@@ -1,4 +1,4 @@
-package base.extensions
+package androidBuild.extensions
 
 import com.android.build.gradle.api.AndroidSourceSet
 import org.gradle.api.NamedDomainObjectContainer

@@ -3,7 +3,7 @@ package androidBuild
 object Dependencies {
 
     //Plugins
-    const val android_gradle_plugin = "com.android.tools.build:gradle:${Versions.android_gradle_plugin}"
+    const val android_build_tools = "com.android.tools.build:gradle:${Versions.android_build_tools}"
 
     //Kotlin
     const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"

@@ -3,7 +3,7 @@ package androidBuild
 object Versions {
 
     //Plugins
-    const val android_gradle_plugin = "4.2.0-rc01"
+    const val android_build_tools = "4.2.0-rc01"
 
     //Kotlin
     const val kotlin = "1.4.32"

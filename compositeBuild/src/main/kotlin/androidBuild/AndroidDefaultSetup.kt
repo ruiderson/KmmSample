@@ -1,8 +1,8 @@
 package androidBuild
 
-import base.extensions.androidTest
-import base.extensions.main
-import base.extensions.test
+import androidBuild.extensions.androidTest
+import androidBuild.extensions.main
+import androidBuild.extensions.test
 import com.android.build.gradle.AppExtension
 
 class AndroidDefaultSetup(
